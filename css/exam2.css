@@ -1,19 +1,26 @@
 /* YOUR CSS MUST GO HERE */
 /* There will be deductions for uncessary extra code. */
 
+.part{
+    display: grid;
+    grid-template-columns: 32% 32% 32%; /* three equal columns */
+    justify-content: space-around; /* I added this to center the content and have equal space around each item in the part div */
+}
 
+/* I added this so you could see how everthing lines in each column up more easily */
+/* it is technically unnecessary code, everything is lined up without this it just makes it look nice */
+.part a {
+    aspect-ratio: 5/3;
+    overflow: hidden;
+    object-fit: cover;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 725px) {
+  .part{
+  grid-template-columns: 48% 48%; /* two equal columns */
+  justify-content: space-around; /* I added this to center the content and have equal space around each item in the part div */
+}
+}
 
 /* DO NOT MODIFY ANY CSS BELOW THIS LINE */
 .pizazz{
